@@ -1,0 +1,94 @@
+
+# Create the contact.html (Contact Page)
+contact_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Notebook and Nest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="site-logo">Notebook and Nest</a>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="narrow-container">
+        <h1 class="section-title">Get in Touch</h1>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem; color: var(--text-medium);">
+            I'd love to hear from you! Whether you have questions about homeschooling, want to discuss literature, or just want to connect, feel free to reach out.
+        </p>
+
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+
+            <div class="form-note">
+                <strong>Note:</strong> This is a static HTML form. To make it functional, you'll need to integrate a backend service like Formspree, Netlify Forms, or EmailJS, or use a contact form service compatible with GitHub Pages.
+            </div>
+        </form>
+
+        <div class="social-links">
+            <h3>Connect With Me</h3>
+            <div class="social-icons">
+                <a href="mailto:your-email@example.com" class="social-icon" title="Email">✉️</a>
+                <a href="#" class="social-icon" title="Instagram">📷</a>
+                <a href="#" class="social-icon" title="Twitter/X">🐦</a>
+                <a href="#" class="social-icon" title="LinkedIn">💼</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Notebook and Nest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>"""
+
+with open('contact.html', 'w', encoding='utf-8') as f:
+    f.write(contact_html)
+
+print("✓ Contact page created: contact.html")

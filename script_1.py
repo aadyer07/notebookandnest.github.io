@@ -1,0 +1,101 @@
+
+# Create the index.html (Home Page)
+index_html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook and Nest - Homeschooling & PhD Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="site-logo">Notebook and Nest</a>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Notebook and Nest</h1>
+        <p class="tagline">Homeschooling & PhD Journey</p>
+        <p>Welcome to my corner of the internet, where I share the joys and challenges of homeschooling my children while pursuing an English PhD. Here, you'll find reflections on literature, learning, and the beautiful chaos of doing both at once.</p>
+    </section>
+
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">Featured Posts</h2>
+            <div class="blog-grid">
+                <article class="post-card">
+                    <div class="post-image">📚</div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">October 15, 2025</span>
+                            <span class="post-category category-phd">PhD</span>
+                        </div>
+                        <h3>Finding Balance: Homeschool Planning and Dissertation Writing</h3>
+                        <p class="post-excerpt">Juggling homeschool lesson plans and academic research requires intentional scheduling and grace. Here's what I've learned about managing both worlds.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image">🏔️</div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">October 10, 2025</span>
+                            <span class="post-category category-homeschool">Homeschool</span>
+                        </div>
+                        <h3>Our Fall Literature Unit: The Hobbit and World Building</h3>
+                        <p class="post-excerpt">This month we're diving into Tolkien's world. Discover how we're connecting literature, geography, and creative writing through this beloved classic.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image">✨</div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">October 5, 2025</span>
+                            <span class="post-category category-homeschool">Homeschool</span>
+                        </div>
+                        <h3>Academic Virtues and Character Education at Home</h3>
+                        <p class="post-excerpt">What does it mean to cultivate intellectual virtues in our children? Reflections on building character through classical education.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Notebook and Nest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>"""
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(index_html)
+
+print("✓ Home page created: index.html")

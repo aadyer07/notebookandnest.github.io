@@ -1,4 +1,6 @@
-# Notebook and Nest
+
+# Create a README file with GitHub Pages deployment instructions
+readme_content = """# Notebook and Nest
 A personal website for sharing homeschooling and PhD journey content.
 
 ## About
@@ -153,3 +155,19 @@ For questions about this template, feel free to reach out through the website's 
 ---
 
 © 2025 Notebook and Nest. Built with love for homeschoolers and literature lovers.
+"""
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(readme_content)
+
+print("✓ README.md created with deployment instructions")
+print("\nAll files created successfully!")
+print("\nFiles included:")
+print("  • index.html (Home page)")
+print("  • blog.html (Blog page)")
+print("  • about.html (About page)")
+print("  • resources.html (Resources page)")
+print("  • contact.html (Contact page)")
+print("  • styles.css (Stylesheet)")
+print("  • script.js (JavaScript)")
+print("  • README.md (Deployment guide)")
