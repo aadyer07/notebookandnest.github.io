@@ -288,9 +288,9 @@ nav a.active {
 }
 
 .profile-image {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
